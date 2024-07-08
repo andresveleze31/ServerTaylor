@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/capacidads",
+      "handler": "capacidad.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/capacidads/count",
+      "handler": "capacidad.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/capacidads/:id",
+      "handler": "capacidad.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/capacidads",
+      "handler": "capacidad.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/capacidads/:id",
+      "handler": "capacidad.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/capacidads/:id",
+      "handler": "capacidad.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

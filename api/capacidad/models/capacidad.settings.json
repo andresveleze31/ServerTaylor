@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capacidads",
+  "info": {
+    "name": "Modulo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Capacidad": {
+      "type": "string"
+    },
+    "DescripcionSecondary": {
+      "type": "text"
+    },
+    "ImageSecondary": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Bullet": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet.bullet-servicio"
+    },
+    "ImageDetail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

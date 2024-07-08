@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caracteristica_corbancos",
+  "info": {
+    "name": "CaracteristicaCorbanco"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Bullet": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet.bullet-car"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

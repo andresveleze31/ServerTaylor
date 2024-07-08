@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonios",
+  "info": {
+    "name": "Testimonio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Persona": {
+      "type": "string"
+    },
+    "Cargo": {
+      "type": "string"
+    },
+    "Calificacion": {
+      "type": "integer"
+    },
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Testimonio": {
+      "type": "text"
+    }
+  }
+}

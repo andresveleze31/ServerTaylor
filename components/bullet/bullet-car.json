@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bullet_bullet_cars",
+  "info": {
+    "name": "BulletCar",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "Caracteristica": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alianzas",
+  "info": {
+    "name": "Alianza"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "ImagenAlianza": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Website": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    }
+  }
+}

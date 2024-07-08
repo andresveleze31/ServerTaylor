@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/caracteristica-corbancos",
+      "handler": "caracteristica-corbanco.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/caracteristica-corbancos/count",
+      "handler": "caracteristica-corbanco.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/caracteristica-corbancos/:id",
+      "handler": "caracteristica-corbanco.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/caracteristica-corbancos",
+      "handler": "caracteristica-corbanco.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/caracteristica-corbancos/:id",
+      "handler": "caracteristica-corbanco.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/caracteristica-corbancos/:id",
+      "handler": "caracteristica-corbanco.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

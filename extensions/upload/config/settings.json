@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+        "cloud_name":"dbgrgtfdi",
+        "api_key": "599934185995582",
+        "api_secret": "2f19RlRcDvIQtc4SaVq1gnvv1WA"
+    }
+}

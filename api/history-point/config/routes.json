@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/history-points",
+      "handler": "history-point.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-points/count",
+      "handler": "history-point.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-points/:id",
+      "handler": "history-point.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/history-points",
+      "handler": "history-point.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/history-points/:id",
+      "handler": "history-point.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/history-points/:id",
+      "handler": "history-point.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

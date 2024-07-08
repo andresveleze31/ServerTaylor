@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bullet_bullet_servicios",
+  "info": {
+    "name": "BulletServicio",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Bullet": {
+      "type": "string"
+    }
+  }
+}

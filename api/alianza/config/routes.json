@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/alianzas",
+      "handler": "alianza.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alianzas/count",
+      "handler": "alianza.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/alianzas/:id",
+      "handler": "alianza.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/alianzas",
+      "handler": "alianza.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/alianzas/:id",
+      "handler": "alianza.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/alianzas/:id",
+      "handler": "alianza.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

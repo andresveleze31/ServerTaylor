@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_points",
+  "info": {
+    "name": "HistoryPoint"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "string"
+    },
+    "Suceso": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "name": "TeamMember"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Cargo": {
+      "type": "string"
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "DescOne": {
+      "type": "text"
+    },
+    "Desc2": {
+      "type": "text"
+    },
+    "Skill": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bullet.skill"
+    }
+  }
+}
